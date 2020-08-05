@@ -112,7 +112,9 @@ network = init_network()
 
 accuracy = []
 batch_size = 100
-for i in range(0,len(x),batch_size):
-    y = predict(network,x[i:i+batch_size])
-    accuracy.append(sum(np.argmax(y, axis=1)==t[i:i+batch_size])/100)
-print(accuracy)
+
+
+# for i in range(0,len(x),batch_size):
+#     y = predict(network,x[i:i+batch_size])
+#     accuracy.append(sum(np.argmax(y, axis=1)==t[i:i+batch_size])/100)
+# print(accuracy)
