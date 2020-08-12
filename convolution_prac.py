@@ -61,5 +61,8 @@ x2 = x.reshape(1,1,4,4)
 print(x2.shape)
 print(x2.ndim)
 
-print(x2)
-print(im2col(x2, 2, 2, stride=2, pad=0))
+rs = im2col(x2, 2, 2, stride=2, pad=0)
+print(rs)
+
+d = np.max(rs, axis=1).reshape(2,2)
+print(d)
